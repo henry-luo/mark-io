@@ -15,9 +15,11 @@ But we don't want it to be too restrictive, too strong opinioned. So it should b
 - scope of mark-io:
   - anything => mark, mark => anything;
 - design:
-  - parsers and serializers: generic grammar-based parsers to convert text sources into Mark;
-  - adaptors: for working with binary data;
-  - connectors: for connecting to various data sources, like RDB, FS, REST;
+  - a modular and plugin-based approach:
+    - parsers and serializers: generic grammar-based parsers to convert text sources into Mark;
+    - adaptors: for working with binary data;
+    - connectors: for connecting to various data sources, like RDB, FS, REST;
+  - so what unifies all these data formats/sources, is not the Mark syntax, but the Mark data model!
 - integration with other projects:
   - transformation, i.e. mark => mark, will be done in mark-template;
   - schema validation, will be done in mark-schema;
